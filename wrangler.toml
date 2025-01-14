@@ -1,4 +1,9 @@
-#:schema node_modules/wrangler/config-schema.json
 name = "bolt"
-pages_build_output_dir = "./build/client"
+type = "webpack"
+account_id = "5e3632598812e8d141df39041d10a288"  # Remplacez par votre Account ID
+zone_id = "e0d1234567890f1a2b3c4d5e6f7g8h9"      # Remplacez par votre Zone ID (si nécessaire)
+workers_dev = true                               # Déploie sur workers.dev (si vous n'utilisez pas de domaine personnalisé)
 
+[site]
+bucket = "./build/client"                        # Répertoire de sortie de votre construction
+entry-point = "workers-site"                     # Point d'entrée de votre application Workers (si applicable)
