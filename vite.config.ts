@@ -11,7 +11,7 @@ import { join } from 'path';
 
 dotenv.config();
 
-// Get detailed git info with fallbacks
+// 🔹 Obtenir les informations Git
 const getGitInfo = () => {
   try {
     return {
@@ -40,7 +40,7 @@ const getGitInfo = () => {
   }
 };
 
-// Read package.json with detailed dependency info
+// 🔹 Lire `package.json`
 const getPackageJson = () => {
   try {
     const pkgPath = join(process.cwd(), 'package.json');
@@ -128,6 +128,7 @@ export default defineConfig((config) => {
   };
 });
 
+// 🔹 Corriger le problème Chrome 129
 function chrome129IssuePlugin() {
   return {
     name: 'chrome129IssuePlugin',
