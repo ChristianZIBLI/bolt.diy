@@ -27,13 +27,13 @@
     "prepare": "husky",
     "clean": "node scripts/clean.js"    
     "install-pnpm": "npm install -g pnpm"
-
-}
-
+     }
   },
+  
   "engines": {
-    "node": ">=18.18.0"
+  "node": ">=18.18.0"
   },
+  
   "dependencies": {
     "@ai-sdk/amazon-bedrock": "1.0.6",
     "@ai-sdk/anthropic": "^0.0.39",
